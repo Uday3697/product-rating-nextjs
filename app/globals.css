@@ -12,7 +12,7 @@
   width: 80%;
   max-width: 380px;
   margin: 20px auto;
-  padding: 15px;
+  padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
 }
@@ -48,5 +48,5 @@
 }
 
 .recommendation-options button {
-  margin-right: 10px;
+  margin-right: 30px;
 }
