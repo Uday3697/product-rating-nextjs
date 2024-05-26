@@ -3,11 +3,8 @@ import React, { useState } from "react";
 import { Rating } from "react-simple-star-rating";
 import { FaBeer } from "react-icons/fa";
 import { FaThumbsUp, FaThumbsDown } from "react-icons/fa";
-interface ProductRatingModalProps {
-  onClose: () => void;
-}
 
-const Home: React.FC<ProductRatingModalProps> = ({ onClose }) => {
+const Home: React.FC = () => {
   const [safetyRating, setSafetyRating] = useState<number>(0);
   const [communicationRating, setCommunicationRating] = useState<number>(0);
   const [recommendation, setRecommendation] = useState("");
@@ -34,9 +31,7 @@ const Home: React.FC<ProductRatingModalProps> = ({ onClose }) => {
   return (
     <div className="product-rating-modal">
       <div className="modal-header">
-        <button className="close-button" onClick={onClose}>
-          X
-        </button>
+        <button className="close-button">X</button>
         <h1>Leave a Review</h1>
       </div>
       <div className="modal-body">
